@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+r = Listing.new(street_address: "273 Elm Street", city: "West Hempstead", state: "New York", zip_code: 11552, user_id: nil, price: 400000, floors: 3,bedrooms: 3,bathrooms: 4, description: "Beautiful Home in Long Island.")
+r.save
