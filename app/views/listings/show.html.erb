@@ -1,4 +1,4 @@
-
+<p><%= link_to "Return to Listings", listings_path %></p>
 <h2><%= @listing.street_address %></h2>
 <%= @listing.city %>,
 <%= @listing.state %>
@@ -12,4 +12,5 @@ Number of Bathrooms: <%= @listing.bathrooms %>
 <br>
 House Description: <%= @listing.description %>
 <br>
+<%= button_to "Delete", {action: "delete", id: @listing.id}, method: :delete %>
 <hr>
