@@ -272,3 +272,665 @@ puma (4.3.0) lib/puma/server.rb:667:in `handle_request'
 puma (4.3.0) lib/puma/server.rb:470:in `process_client'
 puma (4.3.0) lib/puma/server.rb:328:in `block in run'
 puma (4.3.0) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (1.8ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "273 Elm Street"], ["city", "West Hempstead"], ["state", "New York"], ["zip_code", 11552], ["price", 400000], ["floors", 3], ["bedrooms", 3], ["bathrooms", 4], ["description", "Beautiful Home in Long Island."], ["created_at", "2019-12-02 16:44:07.728648"], ["updated_at", "2019-12-02 16:44:07.728648"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/listings" for ::1 at 2019-12-02 11:45:02 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 26.7ms | Allocations: 9366)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 71.3ms | ActiveRecord: 1.3ms | Allocations: 17672)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 11:45:35 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 755)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.2ms | Allocations: 5701)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 11:45:42 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 5699)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 11:45:53 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 591)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms | Allocations: 6422)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 11:45:55 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 760)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 5723)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 11:47:09 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 746)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 5684)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:07:23 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 36.6ms | Allocations: 13305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 77.0ms | ActiveRecord: 0.8ms | Allocations: 21406)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:07:44 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 4645)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:07:46 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 796)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 5748)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:07:55 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.1ms | Allocations: 4648)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:07:56 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 797)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.1ms | Allocations: 5740)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:08:23 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 5744)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:08:48 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 5727)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:09:06 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 784)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 5725)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:09:54 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 787)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.2ms | Allocations: 5724)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Destroy (1.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "7628 Turner Trafficway"], ["city", "East Renae"], ["state", "Georgia"], ["zip_code", 47552], ["price", 177805], ["floors", 1], ["bedrooms", 3], ["bathrooms", 2], ["description", "The SDD transmitter is down, calculate the virtual sensor so we can parse the THX application!"], ["created_at", "2019-12-02 18:21:58.129183"], ["updated_at", "2019-12-02 18:21:58.129183"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "1073 Wilkinson Neck"], ["city", "Noraview"], ["state", "Indiana"], ["zip_code", 14805], ["price", 844727], ["floors", 3], ["bedrooms", 3], ["bathrooms", 1], ["description", "We need to quantify the open-source CSS matrix!"], ["created_at", "2019-12-02 18:21:58.136508"], ["updated_at", "2019-12-02 18:21:58.136508"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "760 Elvis Lock"], ["city", "Allisonchester"], ["state", "Illinois"], ["zip_code", 78684], ["price", 684136], ["floors", 1], ["bedrooms", 1], ["bathrooms", 2], ["description", "If we reboot the circuit, we can get to the SMS alarm through the haptic HDD bus!"], ["created_at", "2019-12-02 18:21:58.142397"], ["updated_at", "2019-12-02 18:21:58.142397"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "3687 Ellis Rue"], ["city", "South Betsy"], ["state", "Kansas"], ["zip_code", 96137], ["price", 179639], ["floors", 4], ["bedrooms", 2], ["bathrooms", 1], ["description", "We need to back up the cross-platform SAS array!"], ["created_at", "2019-12-02 18:21:58.148103"], ["updated_at", "2019-12-02 18:21:58.148103"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "22387 Lockman Inlet"], ["city", "Maeganfurt"], ["state", "Alabama"], ["zip_code", 17025], ["price", 907689], ["floors", 2], ["bedrooms", 2], ["bathrooms", 2], ["description", "Use the back-end SCSI feed, then you can navigate the bluetooth matrix!"], ["created_at", "2019-12-02 18:21:58.153467"], ["updated_at", "2019-12-02 18:21:58.153467"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "990 Alexia Station"], ["city", "West Tildachester"], ["state", "Ohio"], ["zip_code", 45596], ["price", 103979], ["floors", 2], ["bedrooms", 2], ["bathrooms", 2], ["description", "Use the auxiliary AI interface, then you can navigate the open-source firewall!"], ["created_at", "2019-12-02 18:21:58.158980"], ["updated_at", "2019-12-02 18:21:58.158980"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "5662 Toy Meadows"], ["city", "Hartmannside"], ["state", "Pennsylvania"], ["zip_code", 65258], ["price", 652631], ["floors", 5], ["bedrooms", 4], ["bathrooms", 3], ["description", "If we bypass the bus, we can get to the HTTP port through the neural THX feed!"], ["created_at", "2019-12-02 18:21:58.163537"], ["updated_at", "2019-12-02 18:21:58.163537"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "437 Jesus Court"], ["city", "South Dottie"], ["state", "Tennessee"], ["zip_code", 69862], ["price", 640547], ["floors", 2], ["bedrooms", 2], ["bathrooms", 2], ["description", "Use the optical SMTP program, then you can bypass the multi-byte capacitor!"], ["created_at", "2019-12-02 18:21:58.168442"], ["updated_at", "2019-12-02 18:21:58.168442"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "9088 Schaefer Rue"], ["city", "Pacochatown"], ["state", "New Mexico"], ["zip_code", 23842], ["price", 896311], ["floors", 1], ["bedrooms", 1], ["bathrooms", 4], ["description", "Quantifying the sensor won't do anything, we need to program the auxiliary adp panel!"], ["created_at", "2019-12-02 18:21:58.173374"], ["updated_at", "2019-12-02 18:21:58.173374"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("street_address", "city", "state", "zip_code", "price", "floors", "bedrooms", "bathrooms", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["street_address", "4304 Librada Stream"], ["city", "Torphyview"], ["state", "Massachusetts"], ["zip_code", 47974], ["price", 751126], ["floors", 1], ["bedrooms", 5], ["bathrooms", 1], ["description", "You can't synthesize the system without synthesizing the cross-platform JSON card!"], ["created_at", "2019-12-02 18:21:58.177719"], ["updated_at", "2019-12-02 18:21:58.177719"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/listings" for ::1 at 2019-12-02 13:22:21 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 225.4ms | Allocations: 129788)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 294ms (Views: 275.4ms | ActiveRecord: 1.8ms | Allocations: 137891)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:24:07 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 4500)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.3ms | Allocations: 5864)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"listings"}, missing required keys: [:id]):
+    1: <% @listings.each do |listing|%>
+    2: <h1><%= link_to "#{listing.street_address}", listing_path %></h1>
+    3: <%= listing.city %>,
+    4: <%= listing.state %>
+    5: <br>
+  
+app/views/listings/index.html.erb:2
+app/views/listings/index.html.erb:1
+Started GET "/listings" for ::1 at 2019-12-02 13:24:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 9870)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms | Allocations: 11599)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"listings"}, missing required keys: [:id]):
+    1: <% @listings.each do |listing|%>
+    2: <h1><%= link_to "#{listing.street_address}", listing_path %></h1>
+    3: <%= listing.city %>,
+    4: <%= listing.state %>
+    5: <br>
+  
+app/views/listings/index.html.erb:2
+app/views/listings/index.html.erb:1
+Started GET "/listings" for ::1 at 2019-12-02 13:27:25 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1837)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 3197)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"listings"}, missing required keys: [:id]):
+    1: <% @listings.each do |listing|%>
+    2: <h1><%= link_to "#{listing.street_address}", listing_path %></h1>
+    3: <%= listing.city %>,
+    4: <%= listing.state %>
+    5: <br>
+  
+app/views/listings/index.html.erb:2
+app/views/listings/index.html.erb:1
+Started GET "/listings" for ::1 at 2019-12-02 13:27:31 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1653)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 2260)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"listings"}, missing required keys: [:id]):
+    1: <% @listings.each do |listing|%>
+    2: <h1><%= link_to "#{listing.street_address}", listing_path %></h1>
+    3: <%= listing.city %>,
+    4: <%= listing.state %>
+    5: <br>
+  
+app/views/listings/index.html.erb:2
+app/views/listings/index.html.erb:1
+Started GET "/listings" for ::1 at 2019-12-02 13:28:38 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.2ms | Allocations: 6609)
+
+
+Started GET "/listings/2" for ::1 at 2019-12-02 13:28:40 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2910)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.3ms | Allocations: 6745)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Listing:0x00007fde397c4100>):
+    1: <%= @listing.name %>
+    2: <%= @listing.address %>
+    3: <%= @listing.city %>
+    4: <%= @listing.state %>
+  
+app/views/listings/show.html.erb:1
+Started GET "/listings" for ::1 at 2019-12-02 13:28:55 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1614)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 6558)
+
+
+Started GET "/listings/3" for ::1 at 2019-12-02 13:28:56 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2931)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms | Allocations: 4187)
+
+
+  
+ActionView::Template::Error (undefined method `address' for #<Listing:0x00007fde37b23370>):
+    1: 
+    2: <%= @listing.address %>
+    3: <%= @listing.city %>
+    4: <%= @listing.state %>
+    5: <%= @listing.floors %>
+  
+app/views/listings/show.html.erb:2
+Started GET "/listings/3" for ::1 at 2019-12-02 13:29:05 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 216)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 5661)
+
+
+Started GET "/listings/3" for ::1 at 2019-12-02 13:30:49 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 234)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 5668)
+
+
+Started GET "/listings/3" for ::1 at 2019-12-02 13:30:57 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 4532)
+
+
+Started GET "/listings/3" for ::1 at 2019-12-02 13:30:58 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 5658)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:31:09 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1615)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.3ms | Allocations: 5768)
+
+
+Started GET "/listings/4" for ::1 at 2019-12-02 13:31:10 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 4532)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:31:17 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.2ms | Allocations: 4533)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:31:50 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 4663)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:31:53 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 246)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 5678)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:32:06 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 4532)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:32:07 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 5679)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:32:30 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 29)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 4540)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:32:30 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 5672)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:32:36 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 29)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 4540)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:32:36 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 5677)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:33:29 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 481.8ms | Allocations: 149814)
+Completed 500 Internal Server Error in 488ms (ActiveRecord: 0.2ms | Allocations: 152286)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:33:30 -0500
+  
+ActionView::Template::Error (undefined local variable or method `listing' for #<#<Class:0x00007fde3b1f0a10>:0x00007fde3b1fb140>
+Did you mean?  @listing):
+    3: <%= @listing.city %>,
+    4: <%= @listing.state %>
+    5: <br>
+    6: <h3>Home List Price: $<%= number_with_delimiter(listing.price, :delimiter => ',') %></h3>
+    7: Number of Floors: <%= @listing.floors %>
+    8: <br>
+    9: Number of Bedrooms: <%= @listing.bedrooms %>
+  
+app/views/listings/show.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+Started GET "/listings/5" for ::1 at 2019-12-02 13:33:30 -0500
+  Rendered listings/show.html.erb within layouts/application (Duration: 406.8ms | Allocations: 151589)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 500 Internal Server Error in 412ms (ActiveRecord: 0.3ms | Allocations: 153919)
+
+
+Processing by ListingsController#show as HTML
+  
+ActionView::Template::Error (undefined local variable or method `listing' for #<#<Class:0x00007fde3b1f0a10>:0x00007fde3aa75b00>
+Did you mean?  @listing):
+    3: <%= @listing.city %>,
+    4: <%= @listing.state %>
+    5: <br>
+    6: <h3>Home List Price: $<%= number_with_delimiter(listing.price, :delimiter => ',') %></h3>
+    7: Number of Floors: <%= @listing.floors %>
+    8: <br>
+    9: Number of Bedrooms: <%= @listing.bedrooms %>
+  
+app/views/listings/show.html.erb:6
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 336.2ms | Allocations: 151471)
+Completed 500 Internal Server Error in 339ms (ActiveRecord: 0.2ms | Allocations: 152962)
+
+
+Started GET "/listings/5" for ::1 at 2019-12-02 13:33:31 -0500
+  
+ActionView::Template::Error (undefined local variable or method `listing' for #<#<Class:0x00007fde3b1f0a10>:0x00007fde3aaa4360>
+Did you mean?  @listing):
+    3: <%= @listing.city %>,
+    4: <%= @listing.state %>
+    5: <br>
+    6: <h3>Home List Price: $<%= number_with_delimiter(listing.price, :delimiter => ',') %></h3>
+    7: Number of Floors: <%= @listing.floors %>
+    8: <br>
+    9: Number of Bedrooms: <%= @listing.bedrooms %>
+  
+app/views/listings/show.html.erb:6
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 393.0ms | Allocations: 248025)
+Completed 500 Internal Server Error in 397ms (ActiveRecord: 0.2ms | Allocations: 249287)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `listing' for #<#<Class:0x00007fde3b1f0a10>:0x00007fde36a2dea8>
+Did you mean?  @listing):
+    3: <%= @listing.city %>,
+    4: <%= @listing.state %>
+    5: <br>
+    6: <h3>Home List Price: $<%= number_with_delimiter(listing.price, :delimiter => ',') %></h3>
+    7: Number of Floors: <%= @listing.floors %>
+    8: <br>
+    9: Number of Bedrooms: <%= @listing.bedrooms %>
+  
+app/views/listings/show.html.erb:6
+Started GET "/listings/5" for ::1 at 2019-12-02 13:33:47 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 420.9ms | Allocations: 149692)
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 0.2ms | Allocations: 150791)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `listing' for #<#<Class:0x00007fde3b1f0a10>:0x00007fde37c68c08>
+Did you mean?  @listing):
+    3: <%= @listing.city %>,
+    4: <%= @listing.state %>
+    5: <br>
+    6: <h3>Home List Price: $<%= number_with_delimiter(@listing.price, :delimiter => ',') %></h3>
+    7: Number of Floors: <%= @listing.floors %>
+    8: <br>
+    9: Number of Bedrooms: <%= @listing.bedrooms %>
+  
+app/views/listings/show.html.erb:6
+Started GET "/listings/5" for ::1 at 2019-12-02 13:34:07 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 279)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.2ms | Allocations: 5721)
+
+
+Started GET "/listings" for ::1 at 2019-12-02 13:34:19 -0500
+Processing by ListingsController#index as HTML
+  Rendering listings/index.html.erb within layouts/application
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/listings/index.html.erb:1
+  Rendered listings/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 5803)
+
+
+Started GET "/listings/7" for ::1 at 2019-12-02 13:34:22 -0500
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/listings_controller.rb:7:in `show'
+  Rendering listings/show.html.erb within layouts/application
+  Rendered listings/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.2ms | Allocations: 4566)
+
+

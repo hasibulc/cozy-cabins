@@ -1,2 +1,15 @@
-<h1>Listings#show</h1>
-<p>Find me in app/views/listings/show.html.erb</p>
+
+<h2><%= @listing.street_address %></h2>
+<%= @listing.city %>,
+<%= @listing.state %>
+<br>
+<h3>Home List Price: $<%= number_with_delimiter(@listing.price, :delimiter => ',') %></h3>
+Number of Floors: <%= @listing.floors %>
+<br>
+Number of Bedrooms: <%= @listing.bedrooms %>
+<br>
+Number of Bathrooms: <%= @listing.bathrooms %>
+<br>
+House Description: <%= @listing.description %>
+<br>
+<hr>
