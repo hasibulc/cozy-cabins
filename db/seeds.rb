@@ -6,7 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Listing.destroy_all
 
+10.times do 
 
-r = Listing.new(street_address: "273 Elm Street", city: "West Hempstead", state: "New York", zip_code: 11552, user_id: nil, price: 400000, floors: 3,bedrooms: 3,bathrooms: 4, description: "Beautiful Home in Long Island.")
-r.save
+Listing.create(street_address: Faker::Address.street_address, city: Faker::Address.city, state: Faker::Address.state, zip_code: Faker::Address.zip_code, user_id: nil, price: rand(100000..1000000), floors: rand(1..5),bedrooms: rand(1..5),bathrooms: rand(1..4), description: Faker::Hacker.say_something_smart)
+
+end
