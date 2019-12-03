@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_02_160827) do
+ActiveRecord::Schema.define(version: 2019_12_03_151749) do
 
   create_table "listings", force: :cascade do |t|
     t.string "street_address"
@@ -23,6 +23,22 @@ ActiveRecord::Schema.define(version: 2019_12_02_160827) do
     t.integer "bedrooms"
     t.integer "bathrooms"
     t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "username"
+    t.string "password"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "wish_lists", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "listing_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
