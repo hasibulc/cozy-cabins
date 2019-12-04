@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
     def wish_list
         @user = User.find(params[:id])
-        # @item = WishList.find(:user_id )
+        
     end
 
     def new
@@ -17,6 +17,20 @@ class UsersController < ApplicationController
             flash[:error] = user.errors.full_messages
             redirect_to new_user_path
         end
+    end
+
+    def show
+        @user = User.find(params[:id])
+    end
+
+    def edit
+        @user = User.find(params[:id]) 
+    end
+
+    def update
+        user = User.find(params[:id])
+        user.update(user_params)
+        redirect_to user_path(user)
     end
 
 

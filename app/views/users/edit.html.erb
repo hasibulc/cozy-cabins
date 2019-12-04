@@ -1,0 +1,19 @@
+<h1>Update Your Account</h1>
+<%= form_for @user do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <br>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <br>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+    <br>
+    <%= f.label :new_password %>
+    <%= f.password_field :password %>
+    <br>
+    <%= f.label :new_password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+    <br>
+    <%= f.submit "Update" %>
+<% end%>

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root to: 'welcome#index'
+
+  get '/login', to: 'sessions#new', as: 'login'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy', as: 'logout'
 
   # Listings Routes
   get '/listings', to: 'listings#index', as: 'listings'
@@ -18,14 +23,12 @@ Rails.application.routes.draw do
   patch '/users/:id', to: 'users#update'
   delete '/users/:id', to: 'users#delete' 
   # User's Wist List
-  get 'users/:id/wish_lists', to: 'users#wish_list', as: 'users_wish_list'
-
+  get 'users/:id/wish_list', to: 'users#wish_list', as: 'users_wish_list'
+  post 'users/:id/wish_list', to: 'users#add_to_wish_list', as: 'add_to_wish_list'
   # User's Listings
   # get 'users/:id/listings'
 
   # Wish List Routes
-  get '/wish_lists', to: 'wish_lists#index', as: 'wish_lists'
-  get '/wish_lists/new', to: 'wish_lists#new', as: 'new_wish_list'
   get '/wish_lists/:id', to: 'wish_lists#show', as: 'wish_list'
   post '/wish_lists', to: 'wish_lists#create'
   get '/wish_lists/:id/edit', to: 'wish_lists#edit', as: 'edit_wish_list'
