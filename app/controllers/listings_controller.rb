@@ -9,7 +9,6 @@ class ListingsController < ApplicationController
     else
         Listing.all
     end
-
   end
 
   def show
@@ -21,8 +20,13 @@ class ListingsController < ApplicationController
   end
 
   def create
-    listing = Listing.create(listing_params)
-    redirect_to listing_path(listing)
+    listing = Listing.new(listing_params)
+    if listing.save
+      redirect_to listing_path(listing)
+    else
+      flash[:message] = listing.errors.full_messages
+      redirect_to new_listing_path
+    end
   end
 
   def edit
@@ -31,15 +35,14 @@ class ListingsController < ApplicationController
 
   def update
     listing = Listing.find(params[:id])
-    listing.update(listing_params)
-    redirect_to listing_path(listing)
+    if listing.update(listing_params)
+      redirect_to listing_path(listing)
+    else
+      flash[:message] = listing.errors.full_messages
+      redirect_to edit_listing_path
+    end
   end
 
-  def delete
-    listing = Listing.find(params[:id])
-    listing.destroy
-    redirect_to listings_path
-  end
 
   private
 

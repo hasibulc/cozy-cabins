@@ -1,0 +1,10 @@
+<h1>Hey <%= @user.first_name %>, here are your listings:</h1>
+<% @listings.each do |l| %>
+<%= link_to "#{l.street_address}", listing_path(l) %>
+<br>
+<%= l.city %>
+<%= l.state %>
+<br>
+<%= button_to "Delete", {action: "delete_listing", id: l.id}, method: :delete %>
+<hr>
+<% end%>
