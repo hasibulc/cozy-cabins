@@ -1,3 +1,6 @@
 <h1>Welcome To Cozy Cabins</h1>
-
+<% if flash[:message] %>
+<%= flash[:message] %>
+<% end%>
+<br>
 <%= image_tag 'Cozy_Cabins_Logo2.png' %>
