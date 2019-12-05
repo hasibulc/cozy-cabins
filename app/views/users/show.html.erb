@@ -1,3 +1,8 @@
 <h1>Hello <%= @user.first_name %></h1>
 <br>
+<h4><%= link_to "View Wish List", users_wish_list_path(@user) %></h4>
+<br>
+<h4><%= link_to "Post a Listing to our Website", new_listing_path %></h4>
+<br>
 <h4><%= link_to "Edit Account Information", edit_user_path %></h4>
+<br>

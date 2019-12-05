@@ -1,4 +1,7 @@
 <h2>Create a Listing</h2>
+<% if flash[:message] %>
+<%= flash[:message] %>
+<% end%>
 <%= form_for @listing do |f| %>
 <%= f.label :street_address%>
 <%= f.text_field :street_address %>
@@ -26,6 +29,7 @@
 <br>
 <%= f.label :description%>
 <%= f.text_area :description %>
+<%= f.hidden_field :user_id, :value => session[:user_id] %>
 <br>
 <%= f.submit %>
 <% end%>
