@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-
+    before_action :authorized?, only: [:show]
+    
     def wish_list
         @user = User.find(params[:id])
         @wish_list = WishList.find(user_id: @user.id)
