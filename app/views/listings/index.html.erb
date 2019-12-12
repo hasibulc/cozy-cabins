@@ -1,3 +1,4 @@
+<div class = "listing">
 <% @listings.each do |listing|%>
 <h1><%= link_to "#{listing.street_address}", listing_path(listing) %></h1>
 <%= listing.city %>,
@@ -6,3 +7,5 @@
 <h3>Listed Price: $<%= number_with_delimiter(listing.price, :delimiter => ',') %></h3>
 <hr>
 <% end%>
+
+</div>

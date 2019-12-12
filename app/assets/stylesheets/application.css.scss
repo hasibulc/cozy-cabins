@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+
+ 
+li {
+    display: inline;
+    padding: 7px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search {
+    padding-left: 25px;
+}
+
+.navigation {
+    top: 0px;
+    position: fixed;
+    z-index: 2;
+    background-color: #f09e65;
+    width: 100%;
+    padding-bottom: 10px;
+    left: 0px;
+}
+
+.nav{
+    display: unset;
+}
+
+.page {
+    position: relative;
+    top: 102px;
+    align-self: left;
+}
+
+.center{
+    align-self: center;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    align-self: center;
+}
+
+html, body {
+height: 80%;
+width: 100%;
+margin: 0;
+padding: 15px;
+font-family: 'Fjalla One', sans-serif;
+text-align: center;
+}
+
+.home{
+    position: relative;
+    top: 102px;
+}
+
+.listing {
+    position: relative;
+    text-align: left;
+    width: 50%;
+    top: 102px;
+}
+
+.show{
+    position: relative;
+    text-align: left;
+    width: 50%;
+    top: 102px;
+}

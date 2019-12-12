@@ -1,9 +1,6 @@
 class ListingsController < ApplicationController
-  def index
-    # def self.find_by_city(params)
-    #   Listing.find_by(city: params[:search])
-    # end
 
+  def index
     @listings = if params[:search]
         Listing.all.where(state: params[:search])
     else

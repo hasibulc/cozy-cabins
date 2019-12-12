@@ -1,3 +1,4 @@
+<div class = "page">
 <h1><%= @user.first_name %>'s Wish List</h1>
 <% @items.each do |i| %>
 <%= link_to i.street_address + ", " + i.city + " ," + i.state, listing_path(i) %>
@@ -5,3 +6,4 @@
 <%= button_to "Delete", {action: "delete_wish_list_item",:controller=>"wish_list_items", id: i.id}, method: :delete %>
 <hr>
 <% end%>
+</div>
