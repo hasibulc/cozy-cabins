@@ -14,11 +14,11 @@ class ApplicationController < ActionController::Base
   def authorized?
     if logged_in?
       unless current_user.id == params[:id].to_i
-        flash[:message] = "Nah."
+        #flash[:message] = "nah."
         redirect_to :root
       end
     else
-      flash[:message] = "Nah."
+      #flash[:message] = "Nah."
       redirect_to :root
     end
   end

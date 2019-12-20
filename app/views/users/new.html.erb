@@ -1,4 +1,8 @@
+<div class = "page">
 <h1>Create an Account</h1>
+<% if flash[:error]%>
+<%= flash[:error].each {|m| m} %>
+<% end%>
 <%= form_for @user do |f| %>
     <%= f.label :first_name %>
     <%= f.text_field :first_name %>
@@ -17,3 +21,4 @@
     <br>
     <%= f.submit "Create Account" %>
 <% end%>
+</div>

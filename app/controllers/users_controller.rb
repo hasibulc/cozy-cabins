@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-    before_action :authorized?, only: [:show]
-    
+    before_action :authorized?, only: [:show, :my_listings]
+
     def wish_list
         @user = User.find(params[:id])
         @wish_list = WishList.find(user_id: @user.id)
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
         user = User.new(user_params)
         if user.save
             WishList.create(user_id: user.id )
-            redirect_to listings_path
+            redirect_to :root
         else
             flash[:error] = user.errors.full_messages
             redirect_to new_user_path
