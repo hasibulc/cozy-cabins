@@ -1,5 +1,8 @@
 <div class = "page">
 <h1>Please Log In</h1>
+<% if flash[:message] %>
+  <%= flash[:message] %>
+<% end%>
 <%= form_tag login_path do %>
   <%= label_tag 'Username' %>
   <%= text_field_tag :username %>
