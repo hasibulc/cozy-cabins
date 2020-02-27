@@ -1,24 +1,8 @@
-# README
+Real Estate Application where users can list their homes for sale, and favorite other users' listing for potential purchase.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Ruby on Rails application making use of MVC framework and custom routes
 
-Things you may want to cover:
+ Google Maps API for house listing’s show pages
 
-* Ruby version
+ SQLite3 database for persisting user accounts, property listings, and user wish lists
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
